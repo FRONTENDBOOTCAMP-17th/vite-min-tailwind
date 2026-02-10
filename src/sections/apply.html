@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>apply</title>
+    <link rel="shortcut icon" href="/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon/likelion.svg" type="image/svg+xml" />
+    <link rel="preload" as="font" href="/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/sections/css/apply.css" />
+  </head>
+  <body>
+    <!-- Contents -->
+    <section class="apply-container">
+      <div class="apply">
+        <div class="title-container">
+          <span>UT로 운행하기</span>
+        </div>
+        <form action="/" class="apply-form" method="POST">
+          <div class="form-title-container">
+            <span class="form-title">기사로 가입하기</span>
+            <a href="/" class="more">자세히보기</a>
+          </div>
+          <div class="name-wrapper">
+            <div class="name">
+              <input type="text" id="user-name" name="firstName" placeholder="이름" />
+              <label for="user-name" class="sr-only">이름</label>
+            </div>
+            <div class="surname">
+              <input type="text" id="user-surname" name="surName" placeholder="성" />
+              <label for="user-surname" class="sr-only">성</label>
+            </div>
+          </div>
+          <div class="email">
+            <input type="text" class="form-input email is-valid" name="email" placeholder="이메일" />
+            <label for="email" class="sr-only">이메일</label>
+          </div>
+          <div class="password">
+            <div class="pwd-input-container">
+              <input type="text" class="form-input password is-invalid" name="password" placeholder="비밀번호" />
+              <button type="button" class="btn-clear">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18" stroke="#E11900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M6 6L18 18" stroke="#E11900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <p class="error-text">비밀번호를 다시 입력해주세요.</p>
+            </div>
+            <label for="password" class="sr-only">비밀번호</label>
+          </div>
+          <div class="tel">
+            <input type="text" id="tel" name="tel" placeholder="전화번호" />
+            <label for="tel" class="sr-only">전화번호</label>
+          </div>
+          <div class="location">
+            <input type="text" id="location" name="location" placeholder="지역" value="Seoul, Korea, Republic of (South Korea)" />
+            <label for="location" class="sr-only">지역</label>
+          </div>
+          <p class="terms">‘계속'을 선택하면 약관과 개인정보 보호정책을 확인했으며 이에 동의한 것으로 간주됩니다. 또한 위에 입력한 번호로 UT LLC 및 그 제휴가(통칭하여 ‘UT’)가 ARS 등을 이용하여 정보제공이나 마케팅 목적으로 발신하는 전화나 SMS 메시지를 수신하는 데 동의합니다. 마케팅 메시지 수신 동의는 UT 서비스 이용을 위한 필수 조건은 아닙니다. 더 이상 메시지 수신을 원하지 않으시는 경우, 89203번으로 ‘STOP’이라고 문자 메시지를 보내 수신을 거부하실 수 있습니다.</p>
+          <div class="bottom-container">
+            <button type="submit" class="apply-signup-btn">가입하기</button>
+            <div class="bottom-container-inner">
+              <a href="/" class="question">이미 계정이 있으신가요?</a>
+              <a href="/">로그인</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
