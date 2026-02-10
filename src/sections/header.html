@@ -29,7 +29,7 @@
   </head>
   <body>
     <header class="bg-black text-white">
-      <div class="flex items-center relative mx-auto h-[56px] px-6 min-[851px]:h-[64px] min-[851px]:px-16 xl:max-w-[1680px] xl:pl-[150px] xl:pr-8">
+      <div class="flex items-center relative mx-auto h-14 px-6 min-[851px]:h-16 min-[851px]:px-16 xl:max-w-420 xl:pl-37.5 xl:pr-8">
         <h1 class="font-bold text-xl p-3">
           <a href="/" class="block">
             <svg xmlns="http://www.w3.org/2000/svg" width="39" height="30" viewBox="0 0 39 39" fill="none">
@@ -58,15 +58,15 @@
         </h1>
 
         <nav class="hidden min-[851px]:block ml-[25px]">
-          <ul class="flex items-center gap-3 xl:gap-4 list-none">
+          <ul class="flex items-center gap-4 list-none">
             <li class="relative group">
-              <a href="/" class="nav-li">
+              <a href="#about" class="nav-li">
                 기업정보
-                <svg class="ml-2 transition-transform duration-300 group-hover:rotate-180" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
+                <svg class="ml-2 transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
                   <path d="M12.7071 0.707153L6.70709 6.70715L0.707092 0.707154" stroke="white" stroke-width="2" />
                 </svg>
               </a>
-              <ul class="hidden group-hover:block absolute top-full -left-[30%] min-w-[150px] bg-black/80 shadow-lg py-2.5 z-10 list-none">
+              <ul class="hidden group-hover:block group-focus-within:block absolute top-full -left-[30%] min-w-37.5 bg-black/80 shadow-lg py-2.5 z-10 list-none">
                 <li><a href="/" class="drop-li">17기 이규화</a></li>
                 <li><a href="/" class="drop-li">17기 홍정빈</a></li>
                 <li><a href="/" class="drop-li">17기 박현우</a></li>
@@ -75,18 +75,18 @@
               </ul>
             </li>
 
-            <li><a href="/" class="nav-li">안전</a></li>
-            <li><a href="/" class="nav-li">고객지원</a></li>
-            <li><a href="/" class="nav-li">차량 서비스</a></li>
+            <li><a href="#download" class="nav-li">안전</a></li>
+            <li><a href="#qna" class="nav-li">고객지원</a></li>
+            <li><a href="#download2" class="nav-li">차량 서비스</a></li>
 
             <li class="relative group">
               <a href="/" class="nav-li">
                 기사지원
-                <svg class="ml-2 transition-transform duration-300 group-hover:rotate-180" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
+                <svg class="ml-2 transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
                   <path d="M12.7072 0.707153L6.70715 6.70715L0.707153 0.707154" stroke="white" stroke-width="2" />
                 </svg>
               </a>
-              <ul class="hidden group-hover:block absolute top-full -left-[30%] min-w-[150px] bg-black/80 shadow-lg py-2.5 z-10 list-none">
+              <ul class="hidden group-hover:block group-focus-within:block absolute top-full -left-[30%] min-w-37.5 bg-black/80 shadow-lg py-2.5 z-10 list-none">
                 <li><a href="/" class="drop-li">17기 이규화</a></li>
                 <li><a href="/" class="drop-li">17기 홍정빈</a></li>
                 <li><a href="/" class="drop-li">17기 박현우</a></li>
@@ -97,7 +97,7 @@
           </ul>
         </nav>
 
-        <div class="flex items-center gap-2 min-[851px]:gap-4 ml-auto min-[851px]:absolute min-[851px]:right-16 xl:right-[150px]">
+        <div class="flex items-center gap-2 min-[851px]:gap-4 ml-auto min-[851px]:absolute min-[851px]:right-16 xl:right-37.5">
           <h2 class="hidden min-[851px]:block ml-auto">
             <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.5 6L18.0333 7.1C17.6871 7.35964 17.2661 7.5 16.8333 7.5H13.475C12.8775 7.5 12.3312 7.83761 12.064 8.37206C11.7342 9.03161 11.9053 9.83161 12.476 10.2986L14.476 11.9349C16.0499 13.2227 16.8644 15.22 16.6399 17.2412L16.6199 17.4206C16.5403 18.1369 16.3643 18.8392 16.0967 19.5083L15.5 21" stroke="white" />
@@ -110,10 +110,10 @@
             </svg>
           </h2>
 
-          <button class="bg-white text-black px-3.5 py-1.5 rounded-[20px] text-[0.85rem] font-bold cursor-pointer whitespace-nowrap">가입하기</button>
+          <button onclick="alert('서비스 준비 중입니다 ~!')" class="bg-white text-black px-3.5 py-1.5 rounded-[20px] text-[0.85rem] font-bold cursor-pointer whitespace-nowrap">가입하기</button>
 
           <div class="group relative outline-none min-[851px]:hidden" tabindex="0">
-            <button class="cursor-pointer p-2 z-[2001] relative flex items-center justify-center" aria-label="메뉴 열기">
+            <button class="cursor-pointer p-0 z-[2001] relative flex items-center justify-center" aria-label="메뉴 열기">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -121,7 +121,7 @@
               </svg>
             </button>
 
-            <ul class="flex flex-col fixed top-0 -right-[30%] w-[50%] min-w-[200px] h-screen bg-[#111] py-[60px] list-none transition-all duration-400 ease-[cubic-bezier(0.25,0.8,0.25,1)] z-[2000] invisible group-focus-within:visible group-focus-within:right-0 group-focus-within:shadow-[-100vw_0_0_100vw_rgba(0,0,0,0.5)]">
+            <ul class="flex flex-col fixed top-0 -right-[30%] w-[30%] min-w-50 h-screen bg-[#111] py-15 list-none transition-all duration-400 ease-[cubic-bezier(0.25,0.8,0.25,1)] z-20 invisible group-focus-within:visible group-focus-within:right-0 group-focus-within:shadow-[-100vw_0_0_100vw_rgba(0,0,0,0.5)]">
               <li class="w-full"><a href="/" class="mobile-li">17기 이규화</a></li>
               <li class="w-full"><a href="/" class="mobile-li">17기 홍정빈</a></li>
               <li class="w-full"><a href="/" class="mobile-li">17기 엄인호</a></li>
