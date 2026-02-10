@@ -10,6 +10,22 @@
     <link rel="stylesheet" href="/font/suit/SUIT-Variable.css" />
     <link rel="stylesheet" href="/src/common/index.css" />
     <link rel="stylesheet" href="/src/sections/css/header.css" />
+    <style>
+      @import 'tailwindcss';
+      @layer components {
+        .nav-li {
+          @apply flex items-center gap-1 text-[0.95rem] text-white;
+        }
+
+        .drop-li {
+          @apply block px-5 py-2.5 hover:bg-white/10;
+        }
+
+        .mobile-li {
+          @apply block text-white text-[0.9rem] font-medium px-5 py-3 border-b border-[#222] transition-colors hover:bg-[#222] active:bg-[#222];
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="bg-black text-white">
@@ -44,38 +60,38 @@
         <nav class="hidden min-[851px]:block ml-[25px]">
           <ul class="flex items-center gap-3 xl:gap-4 list-none">
             <li class="relative group">
-              <a href="/" class="flex items-center gap-1 text-[0.95rem] text-white">
+              <a href="/" class="nav-li">
                 기업정보
                 <svg class="ml-2 transition-transform duration-300 group-hover:rotate-180" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
                   <path d="M12.7071 0.707153L6.70709 6.70715L0.707092 0.707154" stroke="white" stroke-width="2" />
                 </svg>
               </a>
               <ul class="hidden group-hover:block absolute top-full -left-[30%] min-w-[150px] bg-black/80 shadow-lg py-2.5 z-10 list-none">
-                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 이규화</a></li>
-                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 홍정빈</a></li>
-                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 박현우</a></li>
-                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 엄인호</a></li>
-                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 방효진</a></li>
+                <li><a href="/" class="drop-li">17기 이규화</a></li>
+                <li><a href="/" class="drop-li">17기 홍정빈</a></li>
+                <li><a href="/" class="drop-li">17기 박현우</a></li>
+                <li><a href="/" class="drop-li">17기 엄인호</a></li>
+                <li><a href="/" class="drop-li">17기 방효진</a></li>
               </ul>
             </li>
 
-            <li><a href="/" class="flex items-center gap-1 text-[0.95rem] text-white">안전</a></li>
-            <li><a href="/" class="flex items-center gap-1 text-[0.95rem] text-white">고객지원</a></li>
-            <li><a href="/" class="flex items-center gap-1 text-[0.95rem] text-white">차량 서비스</a></li>
+            <li><a href="/" class="nav-li">안전</a></li>
+            <li><a href="/" class="nav-li">고객지원</a></li>
+            <li><a href="/" class="nav-li">차량 서비스</a></li>
 
             <li class="relative group">
-              <a href="/" class="flex items-center gap-1 text-[0.95rem] text-white">
+              <a href="/" class="nav-li">
                 기사지원
                 <svg class="ml-2 transition-transform duration-300 group-hover:rotate-180" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
                   <path d="M12.7072 0.707153L6.70715 6.70715L0.707153 0.707154" stroke="white" stroke-width="2" />
                 </svg>
               </a>
               <ul class="hidden group-hover:block absolute top-full -left-[30%] min-w-[150px] bg-black/80 shadow-lg py-2.5 z-10 list-none">
-                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 이규화</a></li>
-                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 홍정빈</a></li>
-                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 박현우</a></li>
-                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 엄인호</a></li>
-                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 방효진</a></li>
+                <li><a href="/" class="drop-li">17기 이규화</a></li>
+                <li><a href="/" class="drop-li">17기 홍정빈</a></li>
+                <li><a href="/" class="drop-li">17기 박현우</a></li>
+                <li><a href="/" class="drop-li">17기 엄인호</a></li>
+                <li><a href="/" class="drop-li">17기 방효진</a></li>
               </ul>
             </li>
           </ul>
@@ -106,11 +122,11 @@
             </button>
 
             <ul class="flex flex-col fixed top-0 -right-[30%] w-[50%] min-w-[200px] h-screen bg-[#111] py-[60px] list-none transition-all duration-400 ease-[cubic-bezier(0.25,0.8,0.25,1)] z-[2000] invisible group-focus-within:visible group-focus-within:right-0 group-focus-within:shadow-[-100vw_0_0_100vw_rgba(0,0,0,0.5)]">
-              <li class="w-full"><a href="/" class="block text-white text-[0.9rem] font-medium px-5 py-3 border-b border-[#222] transition-colors hover:bg-[#222] active:bg-[#222]">17기 이규화</a></li>
-              <li class="w-full"><a href="/" class="block text-white text-[0.9rem] font-medium px-5 py-3 border-b border-[#222] transition-colors hover:bg-[#222] active:bg-[#222]">17기 홍정빈</a></li>
-              <li class="w-full"><a href="/" class="block text-white text-[0.9rem] font-medium px-5 py-3 border-b border-[#222] transition-colors hover:bg-[#222] active:bg-[#222]">17기 엄인호</a></li>
-              <li class="w-full"><a href="/" class="block text-white text-[0.9rem] font-medium px-5 py-3 border-b border-[#222] transition-colors hover:bg-[#222] active:bg-[#222]">17기 박현우</a></li>
-              <li class="w-full"><a href="/" class="block text-white text-[0.9rem] font-medium px-5 py-3 border-b border-[#222] transition-colors hover:bg-[#222] active:bg-[#222]">17기 방효진</a></li>
+              <li class="w-full"><a href="/" class="mobile-li">17기 이규화</a></li>
+              <li class="w-full"><a href="/" class="mobile-li">17기 홍정빈</a></li>
+              <li class="w-full"><a href="/" class="mobile-li">17기 엄인호</a></li>
+              <li class="w-full"><a href="/" class="mobile-li">17기 박현우</a></li>
+              <li class="w-full"><a href="/" class="mobile-li">17기 방효진</a></li>
             </ul>
           </div>
         </div>
