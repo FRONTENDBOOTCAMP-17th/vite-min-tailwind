@@ -7,96 +7,106 @@
     <link rel="stylesheet" href="/src/sections/css/qna.css" />
     <link rel="stylesheet" href="/vite-min/public/font/pretendardvariable.css" />
   </head>
-  <body class="font-['Pretendard'] bg-white">
-    <div class="qna-wrapper max-w-3xl mx-auto px-4 py-12">
-      <section class="qna-section">
-        <h2 class="qna-title text-3xl font-bold mb-6">자주 하는 질문</h2>
+  <!doctype html>
+  <html lang="ko-KR">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>qna</title>
+      <link rel="stylesheet" href="/src/sections/css/qna.css" />
+      <link rel="stylesheet" href="/vite-min/public/font/pretendardvariable.css" />
+    </head>
+    <body class="font-['Pretendard'] bg-white">
+      <div class="qna-wrapper max-2-7xl mx-auto p-16">
+        <section class="qna-section">
+          <h2 class="qna-title text-3xl font-bold mb-6 max850:text-2xl max500:text-xl">자주 하는 질문</h2>
 
-        <ul class="qna-list border-t border-gray-200">
-          <!-- 1 -->
-          <li class="qna-item border-b border-gray-200">
-            <input type="checkbox" id="qna-01" class="qna-input peer hidden" />
-            <label for="qna-01" class="qna-header flex justify-between items-center py-4 cursor-pointer">
-              <span class="answer-question text-base font-medium"> 미터기 요금을 중복으로 결제하였습니다 (앱+현장) </span>
-              <div class="answer-toggle relative w-6 h-6">
-                <span class="absolute inset-0 flex items-center justify-center peer-checked:hidden">+</span>
-                <span class="absolute inset-0 hidden items-center justify-center peer-checked:flex">−</span>
+          <ul class="qna-list border-t border-gray-200">
+            <!-- 1 -->
+            <li class="qna-item border-b border-gray-200">
+              <input type="checkbox" id="qna-01" class="qna-input peer hidden" />
+              <label for="qna-01" class="qna-header flex justify-between items-center py-4 cursor-pointer max850:py-3 max500:py-2">
+                <span class="answer-question text-base font-medium max850:text-sm max500:text-xs"> 미터기 요금을 중복으로 결제하였습니다 (앱+현장) </span>
+                <div class="answer-toggle relative w-6 h-6 max850:w-5 max850:h-5 max500:w-4 max500:h-4">
+                  <span class="absolute inset-0 flex items-center justify-center peer-checked:hidden">+</span>
+                  <span class="absolute inset-0 hidden items-center justify-center peer-checked:flex">−</span>
+                </div>
+              </label>
+              <div class="qna-answer max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-64 max850:peer-checked:max-h-52 max500:peer-checked:max-h-40">
+                <div class="answer-content pb-4 text-sm text-gray-600 leading-relaxed max500:text-xs">앱 결제 후 현장에서 요금을 다시 지불한 경우 중복 결제가 발생할 수 있습니다.</div>
               </div>
-            </label>
-            <div class="qna-answer max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-64">
-              <div class="answer-content pb-4 text-sm text-gray-600 leading-relaxed">앱 결제 후 현장에서 요금을 다시 지불한 경우 중복 결제가 발생할 수 있습니다.</div>
-            </div>
-          </li>
+            </li>
 
-          <!-- 2 -->
-          <li class="qna-item border-b border-gray-200">
-            <input type="checkbox" id="qna-02" class="qna-input peer hidden" />
-            <label for="qna-02" class="qna-header flex justify-between items-center py-4 cursor-pointer">
-              <span class="answer-question text-base font-medium"> 미터기 요금 외에 다른 요금이 결제 됐습니다 (통행료, 가승인 등) </span>
-              <div class="answer-toggle relative w-6 h-6">
-                <span class="absolute inset-0 flex items-center justify-center peer-checked:hidden">+</span>
-                <span class="absolute inset-0 hidden items-center justify-center peer-checked:flex">−</span>
+            <!-- 2 -->
+            <li class="qna-item border-b border-gray-200">
+              <input type="checkbox" id="qna-02" class="qna-input peer hidden" />
+              <label for="qna-02" class="qna-header flex justify-between items-center py-4 cursor-pointer max850:py-3 max500:py-2">
+                <span class="answer-question text-base font-medium max850:text-sm max500:text-xs"> 미터기 요금 외에 다른 요금이 결제 됐습니다 (통행료, 가승인 등) </span>
+                <div class="answer-toggle relative w-6 h-6 max850:w-5 max850:h-5 max500:w-4 max500:h-4">
+                  <span class="absolute inset-0 flex items-center justify-center peer-checked:hidden">+</span>
+                  <span class="absolute inset-0 hidden items-center justify-center peer-checked:flex">−</span>
+                </div>
+              </label>
+              <div class="qna-answer max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-[500px] max850:peer-checked:max-h-[400px] max500:peer-checked:max-h-[300px]">
+                <div class="answer-content pb-4 text-sm text-gray-600 space-y-3 max500:text-xs">
+                  <p>비슷한 금액의 요금이 중복 청구 된 경우 아래를 확인해 주세요.</p>
+                  <ol class="list-decimal pl-5 space-y-1">
+                    <li>가족 또는 지인이 동일한 카드를 사용했는지</li>
+                    <li>다른 차량 서비스를 이용하지 않았는지</li>
+                    <li>요금 변경으로 영수증이 수정되지 않았는지</li>
+                  </ol>
+                  <a href="/" class="text-blue-600 underline">고객지원 바로가기</a>
+                </div>
               </div>
-            </label>
-            <div class="qna-answer max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-[500px]">
-              <div class="answer-content pb-4 text-sm text-gray-600 space-y-3">
-                <p>비슷한 금액의 요금이 중복 청구 된 경우 아래를 확인해 주세요.</p>
-                <ol class="list-decimal pl-5 space-y-1">
-                  <li>가족 또는 지인이 동일한 카드를 사용했는지</li>
-                  <li>다른 차량 서비스를 이용하지 않았는지</li>
-                  <li>요금 변경으로 영수증이 수정되지 않았는지</li>
-                </ol>
-                <a href="/" class="text-blue-600 underline"> 고객지원 바로가기 </a>
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <!-- 3 -->
-          <li class="qna-item border-b border-gray-200">
-            <input type="checkbox" id="qna-03" class="qna-input peer hidden" />
-            <label for="qna-03" class="qna-header flex justify-between items-center py-4 cursor-pointer">
-              <span class="answer-question text-base font-medium"> 분실물과 관련해 기사에게 연락하기 </span>
-              <div class="answer-toggle relative w-6 h-6">
-                <span class="absolute inset-0 flex items-center justify-center peer-checked:hidden">+</span>
-                <span class="absolute inset-0 hidden items-center justify-center peer-checked:flex">−</span>
+            <!-- 3 -->
+            <li class="qna-item border-b border-gray-200">
+              <input type="checkbox" id="qna-03" class="qna-input peer hidden" />
+              <label for="qna-03" class="qna-header flex justify-between items-center py-4 cursor-pointer max850:py-3 max500:py-2">
+                <span class="answer-question text-base font-medium max850:text-sm max500:text-xs"> 분실물과 관련해 기사에게 연락하기 </span>
+                <div class="answer-toggle relative w-6 h-6 max850:w-5 max850:h-5 max500:w-4 max500:h-4">
+                  <span class="absolute inset-0 flex items-center justify-center peer-checked:hidden">+</span>
+                  <span class="absolute inset-0 hidden items-center justify-center peer-checked:flex">−</span>
+                </div>
+              </label>
+              <div class="qna-answer max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-64 max850:peer-checked:max-h-52 max500:peer-checked:max-h-40">
+                <div class="answer-content pb-4 text-sm text-gray-600 leading-relaxed max500:text-xs">17기 내 이름은 이규화 보는 사람 아무도 없겠지? 있으면 부끄러웡...</div>
               </div>
-            </label>
-            <div class="qna-answer max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-64">
-              <div class="answer-content pb-4 text-sm text-gray-600 leading-relaxed">17기 내 이름은 이규화 보는 사람 아무도 없겠지? 있으면 부끄러웡...</div>
-            </div>
-          </li>
+            </li>
 
-          <!-- 4 -->
-          <li class="qna-item border-b border-gray-200">
-            <input type="checkbox" id="qna-04" class="qna-input peer hidden" />
-            <label for="qna-04" class="qna-header flex justify-between items-center py-4 cursor-pointer">
-              <span class="answer-question text-base font-medium"> 택시가 잡혀 기다렸으나 저와는 반대방향으로 이동했어요 </span>
-              <div class="answer-toggle relative w-6 h-6">
-                <span class="absolute inset-0 flex items-center justify-center peer-checked:hidden">+</span>
-                <span class="absolute inset-0 hidden items-center justify-center peer-checked:flex">−</span>
+            <!-- 4 -->
+            <li class="qna-item border-b border-gray-200">
+              <input type="checkbox" id="qna-04" class="qna-input peer hidden" />
+              <label for="qna-04" class="qna-header flex justify-between items-center py-4 cursor-pointer max850:py-3 max500:py-2">
+                <span class="answer-question text-base font-medium max850:text-sm max500:text-xs"> 택시가 잡혀 기다렸으나 저와는 반대방향으로 이동했어요 </span>
+                <div class="answer-toggle relative w-6 h-6 max850:w-5 max850:h-5 max500:w-4 max500:h-4">
+                  <span class="absolute inset-0 flex items-center justify-center peer-checked:hidden">+</span>
+                  <span class="absolute inset-0 hidden items-center justify-center peer-checked:flex">−</span>
+                </div>
+              </label>
+              <div class="qna-answer max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-64 max850:peer-checked:max-h-52 max500:peer-checked:max-h-40">
+                <div class="answer-content pb-4 text-sm text-gray-600 leading-relaxed max500:text-xs">나는야 규화 멋쟁이사자 부트캠프 프론트엔드 17기 중에서 젤 귀요미지</div>
               </div>
-            </label>
-            <div class="qna-answer max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-64">
-              <div class="answer-content pb-4 text-sm text-gray-600 leading-relaxed">나는야 규화 멋쟁이사자 부트캠프 프론트엔드 17기 중에서 젤 귀요미지</div>
-            </div>
-          </li>
+            </li>
 
-          <!-- 5 -->
-          <li class="qna-item border-b border-gray-200">
-            <input type="checkbox" id="qna-05" class="qna-input peer hidden" />
-            <label for="qna-05" class="qna-header flex justify-between items-center py-4 cursor-pointer">
-              <span class="answer-question text-base font-medium"> 프로모션 코드가 적용되지 않았습니다. </span>
-              <div class="answer-toggle relative w-6 h-6">
-                <span class="absolute inset-0 flex items-center justify-center peer-checked:hidden">+</span>
-                <span class="absolute inset-0 hidden items-center justify-center peer-checked:flex">−</span>
+            <!-- 5 -->
+            <li class="qna-item border-b border-gray-200">
+              <input type="checkbox" id="qna-05" class="qna-input peer hidden" />
+              <label for="qna-05" class="qna-header flex justify-between items-center py-4 cursor-pointer max850:py-3 max500:py-2">
+                <span class="answer-question text-base font-medium max850:text-sm max500:text-xs"> 프로모션 코드가 적용되지 않았습니다. </span>
+                <div class="answer-toggle relative w-6 h-6 max850:w-5 max850:h-5 max500:w-4 max500:h-4">
+                  <span class="absolute inset-0 flex items-center justify-center peer-checked:hidden">+</span>
+                  <span class="absolute inset-0 hidden items-center justify-center peer-checked:flex">−</span>
+                </div>
+              </label>
+              <div class="qna-answer max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-64 max850:peer-checked:max-h-52 max500:peer-checked:max-h-40">
+                <div class="answer-content pb-4 text-sm text-gray-600 leading-relaxed max500:text-xs">17기 내 이름은 이규화다. 뭐 어쩔건데?</div>
               </div>
-            </label>
-            <div class="qna-answer max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-64">
-              <div class="answer-content pb-4 text-sm text-gray-600 leading-relaxed">17기 내 이름은 이규화다. 뭐 어쩔건데?</div>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </div>
-  </body>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </body>
+  </html>
 </html>
