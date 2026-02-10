@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="/src/sections/css/header.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="header-inner">
-        <h1 class="logo">
-          <a href="/">
+    <header class="bg-black text-white">
+      <div class="flex items-center relative mx-auto h-[56px] px-6 min-[851px]:h-[64px] min-[851px]:px-16 xl:max-w-[1680px] xl:pl-[150px] xl:pr-8">
+        <h1 class="font-bold text-xl p-3">
+          <a href="/" class="block">
             <svg xmlns="http://www.w3.org/2000/svg" width="39" height="30" viewBox="0 0 39 39" fill="none">
               <path d="M31.7203 13.6218H26.52V29.4667H31.7203V13.6218Z" fill="url(#paint0_linear_14131_628)" />
               <path d="M39 9.02222H19.2402V13.6227H39V9.02222Z" fill="url(#paint1_linear_14131_628)" />
@@ -41,47 +41,48 @@
           </a>
         </h1>
 
-        <nav class="gnb">
-          <ul class="menu">
-            <li class="has-dropdown">
-              <a href="/">
+        <nav class="hidden min-[851px]:block ml-[25px]">
+          <ul class="flex items-center gap-3 xl:gap-4 list-none">
+            <li class="relative group">
+              <a href="/" class="flex items-center gap-1 text-[0.95rem] text-white">
                 기업정보
-                <svg class="info-img" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
+                <svg class="ml-2 transition-transform duration-300 group-hover:rotate-180" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
                   <path d="M12.7071 0.707153L6.70709 6.70715L0.707092 0.707154" stroke="white" stroke-width="2" />
                 </svg>
               </a>
-              <ul class="info-dropdown-menu">
-                <li><a href="/">17기 이규화</a></li>
-                <li><a href="/">17기 홍정빈</a></li>
-                <li><a href="/">17기 박현우</a></li>
-                <li><a href="/">17기 엄인호</a></li>
-                <li><a href="/">17기 방....</a></li>
+              <ul class="hidden group-hover:block absolute top-full -left-[30%] min-w-[150px] bg-black/80 shadow-lg py-2.5 z-10 list-none">
+                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 이규화</a></li>
+                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 홍정빈</a></li>
+                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 박현우</a></li>
+                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 엄인호</a></li>
+                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 방효진</a></li>
               </ul>
             </li>
 
-            <li><a href="/">안전</a></li>
-            <li><a href="/">고객지원</a></li>
-            <li><a href="/">차량 서비스</a></li>
-            <li class="has-dropdown">
-              <a href="/">
+            <li><a href="/" class="flex items-center gap-1 text-[0.95rem] text-white">안전</a></li>
+            <li><a href="/" class="flex items-center gap-1 text-[0.95rem] text-white">고객지원</a></li>
+            <li><a href="/" class="flex items-center gap-1 text-[0.95rem] text-white">차량 서비스</a></li>
+
+            <li class="relative group">
+              <a href="/" class="flex items-center gap-1 text-[0.95rem] text-white">
                 기사지원
-                <svg class="help-img" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
+                <svg class="ml-2 transition-transform duration-300 group-hover:rotate-180" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
                   <path d="M12.7072 0.707153L6.70715 6.70715L0.707153 0.707154" stroke="white" stroke-width="2" />
                 </svg>
               </a>
-              <ul class="help-dropdown-menu">
-                <li><a href="/">17기 이규화</a></li>
-                <li><a href="/">17기 홍정빈</a></li>
-                <li><a href="/">17기 박현우</a></li>
-                <li><a href="/">17기 엄인호</a></li>
-                <li><a href="/">17기 방....</a></li>
+              <ul class="hidden group-hover:block absolute top-full -left-[30%] min-w-[150px] bg-black/80 shadow-lg py-2.5 z-10 list-none">
+                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 이규화</a></li>
+                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 홍정빈</a></li>
+                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 박현우</a></li>
+                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 엄인호</a></li>
+                <li><a href="/" class="block px-5 py-2.5 hover:bg-white/10">17기 방효진</a></li>
               </ul>
             </li>
           </ul>
         </nav>
-        <!-- 여기부분이 ko-kr -->
-        <div class="header-util">
-          <h2 class="logo2">
+
+        <div class="flex items-center gap-2 min-[851px]:gap-4 ml-auto min-[851px]:absolute min-[851px]:right-16 xl:right-[150px]">
+          <h2 class="hidden min-[851px]:block ml-auto">
             <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.5 6L18.0333 7.1C17.6871 7.35964 17.2661 7.5 16.8333 7.5H13.475C12.8775 7.5 12.3312 7.83761 12.064 8.37206C11.7342 9.03161 11.9053 9.83161 12.476 10.2986L14.476 11.9349C16.0499 13.2227 16.8644 15.22 16.6399 17.2412L16.6199 17.4206C16.5403 18.1369 16.3643 18.8392 16.0967 19.5083L15.5 21" stroke="white" />
               <path d="M2.5 10.5L5.7381 9.96032C7.09174 9.73471 8.26529 10.9083 8.03968 12.2619L7.90517 13.069C7.66434 14.514 8.3941 15.9471 9.70437 16.6022C10.7535 17.1268 11.2976 18.3097 11.0131 19.4476L10.5 21.5" stroke="white" />
@@ -93,25 +94,23 @@
             </svg>
           </h2>
 
-          <button class="signup-btn">가입하기</button>
-          <div class="menu-container" tabindex="0">
-            <button class="menu-btn" aria-label="메뉴 열기">
-              <svg width="116" height="40" viewBox="0 0 116 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="80" height="40" rx="20" fill="white" />
-                <path
-                  d="M23.5312 13.2656V18.7812H25.625V20.2344H23.5312V27.3594H21.7969V13.2656H23.5312ZM12.3906 23.5C15.8281 21.7812 17.6875 19.3906 18.0312 16.1719H13.1562V14.7344H19.7969C19.7891 18.8828 18.0703 22.5312 13.375 24.8438L12.3906 23.5ZM38.0625 13.2656V20.8438H36.3125V13.2656H38.0625ZM26.5469 17.2031C26.5469 15.2422 28.1719 13.8828 30.3594 13.8906C32.5391 13.8828 34.1641 15.2422 34.1562 17.2031C34.1641 19.1328 32.5391 20.4922 30.3594 20.4844C28.1719 20.4922 26.5469 19.1328 26.5469 17.2031ZM28.25 17.2031C28.2422 18.3359 29.125 19.0547 30.3594 19.0625C31.5703 19.0547 32.4531 18.3359 32.4531 17.2031C32.4531 16.0703 31.5703 15.3359 30.3594 15.3438C29.125 15.3359 28.2422 16.0703 28.25 17.2031ZM28.7188 27.2188V21.5H30.4375V22.9531H36.3281V21.5H38.0625V27.2188H28.7188ZM30.4375 25.8125H36.3281V24.3125H30.4375V25.8125ZM51.1875 13.2656V18.8906H53.3594V20.3281H51.1875V27.3906H49.4688V13.2656H51.1875ZM40.0469 16.8281V15.4375H43.3906V13.4688H45.125V15.4375H48.375V16.8281H40.0469ZM40.7031 21.0781C40.6875 19.125 42.2031 17.7422 44.2656 17.75C46.2969 17.7422 47.8047 19.125 47.8125 21.0781C47.8047 23.0234 46.2969 24.3906 44.2656 24.3906C42.2031 24.3906 40.6875 23.0234 40.7031 21.0781ZM42.3594 21.0781C42.3516 22.2266 43.1562 22.9609 44.2656 22.9531C45.3516 22.9609 46.1406 22.2266 46.1562 21.0781C46.1406 19.9297 45.3516 19.1719 44.2656 19.1719C43.1562 19.1719 42.3516 19.9297 42.3594 21.0781ZM65.75 13.2656V27.3906H64V13.2656H65.75ZM54.0469 23.5C57.75 21.7422 59.4531 19.3516 59.7656 16.1406H54.7656V14.7656H61.5312C61.5312 18.9688 59.8984 22.5391 54.9531 24.8906L54.0469 23.5Z"
-                  fill="black"
-                />
-                <path d="M110 18L98 18" stroke="white" stroke-width="2" stroke-linecap="round" />
-                <path d="M110 22L98 22" stroke="white" stroke-width="2" stroke-linecap="round" />
+          <button class="bg-white text-black px-3.5 py-1.5 rounded-[20px] text-[0.85rem] font-bold cursor-pointer whitespace-nowrap">가입하기</button>
+
+          <div class="group relative outline-none min-[851px]:hidden" tabindex="0">
+            <button class="cursor-pointer p-2 z-[2001] relative flex items-center justify-center" aria-label="메뉴 열기">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </button>
-            <ul class="sidebar-menu">
-              <li><a href="/">17기 이규화</a></li>
-              <li><a href="/">17기 홍정빈</a></li>
-              <li><a href="/">17기 엄인호</a></li>
-              <li><a href="/">17기 박현우</a></li>
-              <li><a href="/">17기 방....</a></li>
+
+            <ul class="flex flex-col fixed top-0 -right-[30%] w-[50%] min-w-[200px] h-screen bg-[#111] py-[60px] list-none transition-all duration-400 ease-[cubic-bezier(0.25,0.8,0.25,1)] z-[2000] invisible group-focus-within:visible group-focus-within:right-0 group-focus-within:shadow-[-100vw_0_0_100vw_rgba(0,0,0,0.5)]">
+              <li class="w-full"><a href="/" class="block text-white text-[0.9rem] font-medium px-5 py-3 border-b border-[#222] transition-colors hover:bg-[#222] active:bg-[#222]">17기 이규화</a></li>
+              <li class="w-full"><a href="/" class="block text-white text-[0.9rem] font-medium px-5 py-3 border-b border-[#222] transition-colors hover:bg-[#222] active:bg-[#222]">17기 홍정빈</a></li>
+              <li class="w-full"><a href="/" class="block text-white text-[0.9rem] font-medium px-5 py-3 border-b border-[#222] transition-colors hover:bg-[#222] active:bg-[#222]">17기 엄인호</a></li>
+              <li class="w-full"><a href="/" class="block text-white text-[0.9rem] font-medium px-5 py-3 border-b border-[#222] transition-colors hover:bg-[#222] active:bg-[#222]">17기 박현우</a></li>
+              <li class="w-full"><a href="/" class="block text-white text-[0.9rem] font-medium px-5 py-3 border-b border-[#222] transition-colors hover:bg-[#222] active:bg-[#222]">17기 방효진</a></li>
             </ul>
           </div>
         </div>
