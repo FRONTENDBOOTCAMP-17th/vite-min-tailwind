@@ -2,7 +2,37 @@
 
 @theme {
   --font-sans: 'Pretendard Variable', sans-serif;
-  --desktop-size: 1680px;
-  --tablet-size: 850px;
-  --mobile: 500px;
+  --spacing: 4px;
+
+  --breakpoint-mobile: 500px;
+  --breakpoint-tablet: 850px;
+  --breakpoint-desktop: 1680px;
+
+  --max-width-mo: 500px;
+  --max-width-tab: 850px;
+  --max-width-pc: 1280px;
+
+  --max-width-form-tab: 420px;
+  --max-width-form-pc: 570px;
+
+  --min-width-mo: 420px;
+
+  --color-valid-bg: #e6f4ea;
+  --color-valid-border: #048848;
+  --color-black-valid-border: #000;
+  --color-error-bg: #feebe9;
+  --color-error-border: #e11900;
+  --color-input-gray: #f3f3f3;
+
+  --text-form-title: 24px;
+  --text-form-sub: 20px;
+  --text-body: 16px;
+  --text-link: 14px;
+  --text-info: 12px;
+  --text-error-msg: 11px;
+  --text-description: 10px;
+
+  --text-h2-mo: 40px;
+  --text-h2-tab: 52px;
+  --text-h2-pc: 64px;
 }
